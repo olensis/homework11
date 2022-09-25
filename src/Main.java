@@ -1,12 +1,4 @@
 public class Main {
-    public static void task1() {
-    }
-
-    public static void task2() {
-    }
-
-    public static void task3() {
-    }
 
     public static int getClientOS(String name) {
         if (name.equals("iOS")) {
@@ -27,6 +19,7 @@ public class Main {
         }
         return 1;
     }
+
     public static void isLeapYear(int year) {
         if (year % 4 != 0) {
             System.out.println("Год не високосный");
@@ -42,47 +35,38 @@ public class Main {
             return;
         }
     }
-    public static void deliveryDistan (int deliveryDistan) {
-        if (deliveryDistan <= 20){
+
+    public static void deliveryDistance(int deliveryDistance) {
+        if (deliveryDistance <= 20) {
             System.out.println("Доставка занимает сутки");
-        return;
-            }else if (deliveryDistan > 20 && deliveryDistan <=60 ) {
+            return;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
             System.out.println("Доставка занимает сутки" + 2);
             return;
-        }else if (deliveryDistan > 60 && deliveryDistan <=100) {
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
             System.out.println("Доставка занимает сутки" + 3);
             return;
         }
     }
 
-
     public static void main(String[] args) {
-        task1();
-        int year= 2022;
+        // Задание 1
+        int year = 2022;
         isLeapYear(year);
         System.out.println();
 
-        task2();
+        // Задание 2
         String osName = "iOS";
         int clientOS = getClientOS(osName);
-        System.out.println(clientOS);
+
         String yearName = "2022";
-        int currentYear =currentYear (yearName) ;
+        int currentYear = currentYear(yearName);
         System.out.println();
 
-        task3();
-         int deliveryDistan = 95;
-         deliveryDistan(deliveryDistan);
+        // Задание 3
+        int deliveryDistance = 95;
+        deliveryDistance(deliveryDistance);
         System.out.println();
-
-        // готово)
-
-
-
-
-
-
-
 
 
     }
